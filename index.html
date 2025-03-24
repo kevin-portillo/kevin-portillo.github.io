@@ -12,6 +12,15 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+				<!-- THE FOLLOWING IS AN EXTRA LINE USED TO GET CURRENT FONT AWESOME v6 ICONS-->
+				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+				<!--IT SHOULD BE ADDED TO THE OTHER HTML FILES IN ORDER TO USE THE CURRENT ICONS.
+				ANOTHER SOLUTION: WOULD BE TO REPLACE THE "fontawesome-all.min.css" FILE IN THE CSS FOLDER 
+				OF THIS WEBSITE, AND MAKE SURE THAT THE 'main.css' FILE IS LINKED TO THE REPLACEMENT(IF FILE NAME IS CHANGED)-->
+				<!--WE USED THESE NEW ICONS FOR THE PHONE/EMAIL/LOCATION SECTION AT THE BOTTOM OF THE PAGE
+				LOOK AT THE '<i>' TAGS IN THOSE SECTIONS  -->
+
 	</head>
 	<body class="is-preload">
 
@@ -198,17 +207,25 @@
 
 						<section class="split contact">
 							<section class="alt">
-								<h3>Location</h3>
+								<!--NOTE: USED "&nbsp;" a non-breaking space to add a space between the word and icon-->
+								<!--ALSO SEE NEAR THE TOP OF FILE SINCE ANOTHER LINE WAS ADDED SO THESE 3 ICONS COULD WORK-->
+								<h3>Location &nbsp;<i class="fa-solid fa-location-dot"></i></h3>
 								<p>New York, NY<br />
 								11377</p>
 							</section>
 							<section>
-								<h3>Phone</h3>
-								<p><a href="#">+1(347)515-5453</a></p>
+								<!--NOTE: USED "&nbsp;" a non-breaking space to add a space between the word and icon-->
+								<h3>Phone &nbsp;<i class="fa-solid fa-phone"></i></h3>
+								<p><a href="tel:+13475155453">+1(347)515-5453</a></p>
+								<!--THE ABOVE LINE ORIGINALLY WAS:-->
+								<!--<p><a href="#">+1(347)515-5453</a></p>-->
 							</section>
+
 							<section>
-								<h3>Email</h3>
-								<p><a href="#">kportillo30@gmail.com</a></p>
+								<h3>Email &nbsp;<i class="fa-solid fa-envelope"></i></h3>
+								<p><a href="mailto:kportillo30@gmail.com">kportillo30@gmail.com</a></p>
+								<!--THE ABOVE LINE ORIGINALLY WAS:-->
+								<!--<p><a href="#">kportillo30@gmail.com</a></p>-->
 							</section>
 							<section>
 								<h3>Social</h3>
@@ -221,6 +238,35 @@
 								</ul>
 							</section>
 						</section>
+<!-- INITIAL SOCIAL CONTACT SECTION WAS:-->
+ <!--
+<section class="split contact">
+							<section class="alt">
+								<h3>Address</h3>
+								<p>1234 Somewhere Road #87257<br />
+								Nashville, TN 00000-0000</p>
+							</section>
+							<section>
+								<h3>Phone</h3>
+								<p><a href="#">(000) 000-0000</a></p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p><a href="#">info@untitled.tld</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</section>
+ -->
+
+
 					</footer>
 					
 				<!-- Copyright -->
